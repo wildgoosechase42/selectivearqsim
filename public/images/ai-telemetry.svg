@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14221d"/>
+      <stop offset="100%" stop-color="#09120e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#aiBg)"/>
+  <rect x="40" y="40" width="160" height="180" rx="10" fill="#1c1c1c" stroke="#10b981" stroke-width="1.5"/>
+  <text x="120" y="70" fill="#10b981" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">EDGE ANALYZER</text>
+  <text x="120" y="95" fill="#f5f5f5" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Raspberry Pi AI</text>
+  <text x="120" y="115" fill="rgba(245,245,245,0.6)" font-family="monospace" font-size="9" text-anchor="middle">Test Strip Optical Cam</text>
+  <rect x="60" y="130" width="120" height="70" rx="6" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.3)"/>
+  <text x="120" y="155" fill="#34d399" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">10 ANALYTES</text>
+  <text x="120" y="175" fill="rgba(245,245,245,0.7)" font-family="monospace" font-size="9" text-anchor="middle">Structured Packets</text>
+  <path d="M 205 130 L 395 130" stroke="#10b981" stroke-width="2" stroke-dasharray="4 4"/>
+  <rect x="250" y="105" width="100" height="50" rx="6" fill="#1c1c1c" stroke="#38bdf8"/>
+  <text x="300" y="127" fill="#38bdf8" font-family="monospace" font-size="9" font-weight="bold" text-anchor="middle">SELECTIVE ARQ</text>
+  <text x="300" y="145" fill="#f5f5f5" font-family="monospace" font-size="8" text-anchor="middle">Point-of-Care Link</text>
+  <rect x="400" y="40" width="160" height="180" rx="10" fill="#1c1c1c" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="480" y="70" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">HOSPITAL CLOUD</text>
+  <text x="480" y="95" fill="#f5f5f5" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">Central Database</text>
+  <text x="480" y="115" fill="rgba(245,245,245,0.6)" font-family="monospace" font-size="9" text-anchor="middle">EHR / Telemetry Hub</text>
+  <rect x="420" y="130" width="120" height="70" rx="6" fill="rgba(56,189,248,0.08)" stroke="rgba(56,189,248,0.3)"/>
+  <text x="480" y="155" fill="#38bdf8" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">RELIABLE TELEMETRY</text>
+  <text x="480" y="175" fill="rgba(245,245,245,0.7)" font-family="monospace" font-size="9" text-anchor="middle">Zero Data Loss</text>
+  <g transform="translate(40, 255)">
+    <rect width="520" height="95" rx="8" fill="rgba(16,185,129,0.06)" stroke="rgba(16,185,129,0.2)"/>
+    <text x="30" y="28" fill="#34d399" font-family="monospace" font-size="11" font-weight="bold">BENEFIT: SURGICAL BANDWIDTH EFFICIENCY</text>
+    <text x="30" y="52" fill="#f5f5f5" font-family="sans-serif" font-size="11">Corrupted analyte readings are isolated &amp; selectively retransmitted without discarding the complete clinical report.</text>
+    <text x="30" y="74" fill="rgba(245,245,245,0.6)" font-family="monospace" font-size="10">Guarantees medical integrity in multi-site point-of-care clinic deployments.</text>
+  </g>
+</svg>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Selective Repeat ARQ — Scientific Virtual Lab</title>
+  <meta name="description" content="An interactive scientific Virtual Lab experiment on Selective Repeat ARQ protocol in Data Communication & Networking." />
+  
+  
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/logo.png" />
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Adamina&family=JetBrains+Mono:wght@400;500;600&family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="/index.css" />
+</head>
+<body class="dark">
+
+  
+  <header class="vlab-nav" id="mainNav" role="banner">
+    <div class="nav-progress-track">
+      <div class="nav-progress-fill" id="navProgressBar"></div>
+    </div>
+    
+    <div class="nav-inner">
+      <a href="#heroTrack" class="nav-brand" id="navLogo" aria-label="Go to top">
+        <div class="nav-logo-badge">
+          <img src="/logo.png" alt="Somaiya Vidyavihar Logo" class="nav-logo-img" />
+        </div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-label">VLAB • EXPERIMENT 08</span>
+          <span class="nav-brand-title">Selective Repeat ARQ Simulator</span>
+        </div>
+      </a>
+
+      <button class="nav-mobile-toggle" id="navMobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main menu">
+        <a href="#heroTrack" class="nav-link active">↑ Top</a>
+        <a href="#aimBlockContainer" class="nav-link" data-card-index="0">Aim</a>
+        <a href="#theoryBlockContainer" class="nav-link" data-card-index="1">Theory</a>
+        <a href="#pretestBlockContainer" class="nav-link" data-card-index="2">Pretest</a>
+        <a href="#simulationBlockContainer" class="nav-link" data-card-index="3">Simulation</a>
+        <a href="#posttestBlockContainer" class="nav-link" data-card-index="4">Posttest</a>
+        <a href="#aiUseCaseBlockContainer" class="nav-link" data-card-index="5">AI Use Case</a>
+        <a href="#conclusion" class="nav-link">Conclusion</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <div class="hero-preloader" aria-live="polite" aria-label="Loading cardiac visualization">
+    <div class="preloader-content">
+      <div class="preloader-pulse-indicator">
+        <div class="pulse-ring"></div>
+        <div class="pulse-core"></div>
+      </div>
+      <div class="preloader-status">Initializing Vascular Telemetry</div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar-fill"></div>
+      </div>
+      <div class="preloader-pct">0%</div>
+    </div>
+  </div>
+
+  <main>
+    
+    <section class="hero-scroll-track" id="heroTrack" aria-label="Cardiovascular journey interactive visualization">
+      <div class="hero-sticky-viewport">
+        
+        
+        <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+        
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="hero-depth-layer" aria-hidden="true"></div>
+
+        
+        <a href="#heroTrack" class="hero-brand-logo" aria-label="Return to top">
+          <img src="/logo.png" alt="Selective Repeat ARQ Logo" class="hero-logo-img" />
+        </a>
+
+        
+        <div class="hero-cinematic-stage" aria-live="polite">
+          <div class="hero-cinematic-block" id="heroPhase1">
+            <span class="hero-protocol-title">Selective Repeat ARQ</span>
+            <h1 class="hero-phase-title">Every Beat Carries a Signal.</h1>
+          </div>
+          <div class="hero-cinematic-block" id="heroPhase2">
+            <span class="hero-protocol-title">Selective Repeat ARQ</span>
+            <h2 class="hero-phase-title">Every Lost Packet Finds Its Way Back.</h2>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+    <section id="curriculumStack" class="curriculum-flip-stack-wrapper" aria-label="Virtual Lab Instructional Curriculum Stack">
+      <div id="curriculumStackRoot"></div>
+    </section>
+
+    <section class="vlab-section conclusion-section" id="conclusion" aria-labelledby="conclusionHeading">
+      <div class="vlab-container narrow-container text-center">
+        
+        
+        <div class="vlab-section-box reveal-on-scroll text-center">
+          <div class="conclusion-block">
+            <h2 class="conclusion-title" id="conclusionHeading">Conclusion</h2>
+            <div class="conclusion-two-lines">
+              <p>Selective Repeat ARQ delivers optimal bandwidth efficiency by isolating and retransmitting only corrupted frames.</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="vlab-section-box tech-stack-box reveal-on-scroll">
+          <div class="tech-stack-header">
+            <span class="tech-stack-label">TECH STACK</span>
+          </div>
+          <div class="tech-stack-grid">
+            <div class="tech-card">
+              <span class="tech-badge-dot gold"></span>
+              <div class="tech-card-body">
+                <span class="tech-name">React 19</span>
+                <span class="tech-desc">Interactive Component Architecture</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <span class="tech-badge-dot red"></span>
+              <div class="tech-card-body">
+                <span class="tech-name">Framer Motion</span>
+                <span class="tech-desc">3D Flip Stack & Physics Animations</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <span class="tech-badge-dot red"></span>
+              <div class="tech-card-body">
+                <span class="tech-name">HTML5 Canvas</span>
+                <span class="tech-desc">Hardware-Accelerated 2D Rendering</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <span class="tech-badge-dot gold"></span>
+              <div class="tech-card-body">
+                <span class="tech-name">JavaScript (ES6+)</span>
+                <span class="tech-desc">Protocol Logic & State Engine</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <span class="tech-badge-dot red"></span>
+              <div class="tech-card-body">
+                <span class="tech-name">Vanilla CSS3</span>
+                <span class="tech-desc">Glassmorphic Design System</span>
+              </div>
+            </div>
+            <div class="tech-card">
+              <span class="tech-badge-dot gold"></span>
+              <div class="tech-card-body">
+                <span class="tech-name">Vite 6</span>
+                <span class="tech-desc">High-Performance Build Tooling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="dev-status-bar reveal-on-scroll" aria-label="Developer credits">
+          <div class="dev-status-left">
+            <span class="dev-status-glow-dot" aria-hidden="true"></span>
+            <span class="dev-role-label">DEVELOPER •</span>
+            <strong class="dev-author-name">Vihaan Rao</strong>
+          </div>
+          <div class="dev-status-right">
+            <span class="roll-number-label">ROLL NO:</span>
+            <div class="roll-number-pill">
+              <span class="roll-number-text">16010425090</span>
+            </div>
+          </div>
+        </div>
+
+        <footer class="vlab-minimal-footer">
+          <div class="footer-divider"></div>
+          <span class="footer-meta">V-LAB / DATA LINK LAYER • SELECTIVE REPEAT ARQ EXPERIMENT</span>
+        </footer>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="speedometer-modal-backdrop" id="speedometerModal" role="dialog" aria-modal="true" aria-labelledby="modalQuizTitle">
+    <div class="speedometer-card">
+      <div class="modal-top">
+        <span class="modal-eval-tag">PERFORMANCE METRIC</span>
+        <h3 class="modal-title" id="modalQuizTitle">Evaluation Result</h3>
+      </div>
+      <div class="gauge-wrap" aria-hidden="true">
+        <svg class="gauge-svg" viewBox="0 0 240 140">
+          <path class="gauge-bg-arc" d="M 20 120 A 100 100 0 0 1 220 120" fill="none" stroke="var(--muted)" stroke-width="8" stroke-linecap="round"/>
+          <path class="gauge-progress-arc" id="gaugeProgressArc" d="M 20 120 A 100 100 0 0 1 220 120" fill="none" stroke="var(--primary)" stroke-width="8" stroke-linecap="round" stroke-dasharray="314.15" stroke-dashoffset="314.15"/>
+          <circle cx="190" cy="50" r="3" fill="var(--secondary)" opacity="0.8" />
+          <circle cx="120" cy="120" r="6" fill="var(--primary)" />
+          <g id="gaugeNeedle" class="gauge-needle-group" style="transform-origin: 120px 120px; transform: rotate(-90deg);">
+            <line x1="120" y1="120" x2="120" y2="35" stroke="var(--foreground)" stroke-width="2.5" stroke-linecap="round" />
+            <circle cx="120" cy="35" r="2.5" fill="var(--primary)" />
+          </g>
+        </svg>
+        <div class="gauge-center-val">
+          <span class="gauge-pct" id="modalPctValue">0%</span>
+          <span class="gauge-score-sub" id="modalScoreText">0 / 5 Correct</span>
+        </div>
+      </div>
+      <div class="modal-comparison" id="modalComparisonBlock" style="display: none;"></div>
+      <div class="modal-actions">
+        <button type="button" class="sim-btn" id="modalRetakeBtn">Retake Test</button>
+        <button type="button" class="sim-btn primary-sim-btn" id="modalCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="speedometer-modal-backdrop" id="simResultModal" role="dialog" aria-modal="true" aria-labelledby="simModalTitle">
+    <div class="sim-minimal-result-card" id="simResultCard">
+      <div class="res-top-block">
+        <h2 class="res-title" id="simModalTitle">TRANSMISSION COMPLETE</h2>
+        <span class="res-progress-pill" id="simResultRating">30 / 30</span>
+      </div>
+      <div class="res-gauge-section">
+        <div class="gauge-wrap">
+          <svg class="gauge-svg" viewBox="0 0 240 140">
+            <path class="gauge-bg-arc" d="M 30 130 A 90 90 0 0 1 210 130" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="12" stroke-linecap="round"/>
+            <path class="gauge-accent-arc" id="simResultGaugeAccent" d="M 30 130 A 90 90 0 0 1 210 130" fill="none" stroke="rgba(212, 175, 53, 0.22)" stroke-width="12" stroke-linecap="round" stroke-dasharray="314.15" stroke-dashoffset="0"/>
+            <path class="gauge-progress-arc" id="simResultGaugeArc" d="M 30 130 A 90 90 0 0 1 210 130" fill="none" stroke="#c81e1e" stroke-width="12" stroke-linecap="round" stroke-dasharray="282.74" stroke-dashoffset="282.74"/>
+          </svg>
+          <div class="gauge-center-val">
+            <span class="res-score-label">SCORE</span>
+            <div class="res-score-row">
+              <span class="res-score-num" id="simResultScore">0</span>
+              <span class="res-score-denom">/ 100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="res-metrics-grid" id="simResultMetrics"></div>
+      <div class="res-actions-row">
+        <button type="button" class="res-btn res-primary-btn" id="simModalRetryBtn">PLAY AGAIN</button>
+        <button type="button" class="res-btn res-close-btn" id="simModalCloseBtn">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

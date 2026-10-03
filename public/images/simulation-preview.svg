@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="simBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d1216"/>
+      <stop offset="100%" stop-color="#14080a"/>
+    </linearGradient>
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c81e1e" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c81e1e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" rx="16" fill="url(#simBg)"/>
+  <rect x="40" y="30" width="520" height="44" rx="8" fill="rgba(0,0,0,0.4)" stroke="rgba(200,30,30,0.3)"/>
+  <text x="60" y="58" fill="#f87171" font-family="monospace" font-size="13" font-weight="bold">SELECTIVE DROP SIMULATOR</text>
+  <text x="490" y="58" fill="#22c55e" font-family="monospace" font-size="12" font-weight="bold">ACTIVE</text>
+  <rect x="100" y="100" width="65" height="50" rx="6" fill="#1c1c1c" stroke="#22c55e" stroke-width="2"/>
+  <text x="132" y="131" fill="#f5f5f5" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">P01</text>
+  <rect x="220" y="130" width="65" height="50" rx="6" fill="#1c1c1c" stroke="#22c55e" stroke-width="2"/>
+  <text x="252" y="161" fill="#f5f5f5" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">P02</text>
+  <rect x="340" y="110" width="65" height="50" rx="6" fill="#3b1115" stroke="#ef4444" stroke-width="2"/>
+  <text x="372" y="141" fill="#fca5a5" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">⚠ P03</text>
+  <rect x="440" y="150" width="65" height="50" rx="6" fill="#1c1c1c" stroke="#38bdf8" stroke-width="2"/>
+  <text x="472" y="181" fill="#f5f5f5" font-family="monospace" font-size="13" font-weight="bold" text-anchor="middle">P04</text>
+  <line x1="372" y1="165" x2="372" y2="280" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 4"/>
+  <g transform="translate(60, 290)">
+    <rect width="480" height="75" rx="8" fill="rgba(0,0,0,0.5)" stroke="rgba(255,255,255,0.1)"/>
+    <text x="30" y="32" fill="#d4af35" font-family="monospace" font-size="11" font-weight="bold">RECEIVER HOLDING BUFFER</text>
+    <rect x="230" y="18" width="55" height="40" rx="4" fill="#1c1c1c" stroke="#38bdf8"/>
+    <text x="257" y="43" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">P04</text>
+    <rect x="300" y="18" width="55" height="40" rx="4" fill="#1c1c1c" stroke="#38bdf8"/>
+    <text x="327" y="43" fill="#38bdf8" font-family="monospace" font-size="11" font-weight="bold" text-anchor="middle">P05</text>
+    <rect x="390" y="18" width="70" height="40" rx="4" fill="#2d1214" stroke="#ef4444"/>
+    <text x="425" y="43" fill="#fca5a5" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">REQ R03</text>
+  </g>
+</svg>
