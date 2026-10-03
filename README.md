@@ -3,10 +3,12 @@
 [![Vite](https://img.shields.io/badge/Vite-6.0-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-14.0-black?logo=framer&logoColor=white)](https://www.framer.com/motion/)
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel&logoColor=white)](https://vercel.com/)
+[![Vercel](https://img.shields.io/badge/Vercel-Live_Demo-black?logo=vercel&logoColor=white)](https://selective-arq-simv1.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > An interactive, scientific Virtual Laboratory experiment for the **Data Link Layer (Computer Networks)** exploring **Selective Repeat Automatic Repeat reQuest (ARQ)** through cinematic scroll visualization, interactive 3D instructional card stacks, diagnostic evaluations, and a real-time gamified protocol simulator.
+
+**Live Application:** [https://selective-arq-simv1.vercel.app](https://selective-arq-simv1.vercel.app)
 
 ---
 
