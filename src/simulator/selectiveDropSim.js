@@ -111,6 +111,8 @@ export class SelectiveDropSim {
 
     this.physics.reset();
     this.physics.render();
+
+    this.showTutorial();
   }
 
   /* ========================================================================
@@ -143,6 +145,10 @@ export class SelectiveDropSim {
   }
 
   showTutorial() {
+    if (this.isGameRunning && !this.isPaused) {
+      this.togglePause(true);
+    }
+
     if (this.startScreen) {
       this.startScreen.style.opacity = '0';
       this.startScreen.style.pointerEvents = 'none';
@@ -202,7 +208,11 @@ export class SelectiveDropSim {
         this.tutorialOverlay.style.display = 'none';
       }, 300);
     }
-    this.startActualSimulation();
+    if (this.isGameRunning && this.isPaused) {
+      this.togglePause(false);
+    } else if (!this.isGameRunning) {
+      this.startActualSimulation();
+    }
   }
 
   /* ========================================================================
@@ -485,9 +495,15 @@ export class SelectiveDropSim {
     this.playPauseBtn?.addEventListener('click', () => this.togglePause());
     this.restartBtn?.addEventListener('click', () => this.confirmRestart());
     this.resumeBtn?.addEventListener('click', () => this.togglePause(false));
+
+    const howToPlayBtn = document.getElementById('simHowToPlayBtn');
+    howToPlayBtn?.addEventListener('click', () => {
+      this.showTutorial();
+    });
+
     this.pauseRestartBtn?.addEventListener('click', () => {
       this.togglePause(false);
-      this.resetSimulation();
+      this.confirmRestart();
     });
 
     this.ctrlLeft?.addEventListener('click', (e) => {
@@ -615,11 +631,11 @@ export class SelectiveDropSim {
   }
 
   confirmRestart() {
-    this.resetSimulation();
+    this.startActualSimulation();
   }
 
   resetSimulation() {
-    this.returnToMenu();
+    this.startActualSimulation();
   }
 
   returnToMenu() {

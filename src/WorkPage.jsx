@@ -16,13 +16,6 @@ export default function WorkPage() {
     dropSim.init();
     window.dropSim = dropSim;
 
-    // Auto-start the simulation: skip start screen and tutorial
-    setTimeout(() => {
-      if (dropSim && dropSim.startActualSimulation) {
-        dropSim.startActualSimulation();
-      }
-    }, 600);
-
     const posttest = new QuizEngine("posttest", "posttestContainer", POSTTEST_QUESTIONS);
     posttest.init();
 
@@ -263,7 +256,7 @@ export default function WorkPage() {
                 </div>
               </div>
 
-              <div className="sim-tutorial-overlay" id="simTutorialOverlay" style={{ display: "none" }}>
+              <div className="sim-tutorial-overlay" id="simTutorialOverlay">
                 <div className="sim-tutorial-card">
                   <div className="tut-header">
                     <div className="tut-indicators">
@@ -377,6 +370,9 @@ export default function WorkPage() {
                         <span className="prog-lbl">PACKETS</span>
                       </div>
                       <div className="topbar-actions">
+                        <button type="button" className="sim-btn small-btn" id="simHowToPlayBtn" aria-label="View Instructions">
+                          <span>ℹ Instructions</span>
+                        </button>
                         <button type="button" className="sim-btn small-btn" id="simPlayPauseBtn" aria-label="Pause or Resume Simulation">
                           <span>⏸ Pause</span>
                         </button>
@@ -402,6 +398,16 @@ export default function WorkPage() {
                         <div className="ctrl-btn-group">
                           <button type="button" className="sim-ctrl-btn ctrl-drop-btn" id="ctrlSoftDrop" aria-label="Soft Drop">▼ SOFT DROP</button>
                           <button type="button" className="sim-ctrl-btn ctrl-hard-drop-btn" id="ctrlHardDrop" aria-label="Hard Drop">⤓ HARD DROP</button>
+                        </div>
+                      </div>
+
+                      <div className="sim-controls-guide" aria-label="Keyboard controls">
+                        <div className="guide-keys">
+                          <span><kbd className="key-chip">◀</kbd> <kbd className="key-chip">▶</kbd> <span className="guide-txt">Move</span></span>
+                          <span><kbd className="key-chip">▲</kbd> <span className="guide-txt">Rotate</span></span>
+                          <span><kbd className="key-chip">▼</kbd> <span className="guide-txt">Drop</span></span>
+                          <span><kbd className="key-chip">SPACE</kbd> <span className="guide-txt">Hard Drop</span></span>
+                          <span><kbd className="key-chip danger">R</kbd> <span className="guide-txt">Retransmit</span></span>
                         </div>
                       </div>
                     </div>

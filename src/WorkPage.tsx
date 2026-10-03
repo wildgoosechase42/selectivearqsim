@@ -498,6 +498,9 @@ export default function WorkPage() {
                         <span className="prog-lbl">PACKETS</span>
                       </div>
                       <div className="topbar-actions">
+                        <button type="button" className="sim-btn small-btn" id="simHowToPlayBtn" aria-label="View Instructions">
+                          <span>ℹ Instructions</span>
+                        </button>
                         <button type="button" className="sim-btn small-btn" id="simPlayPauseBtn" aria-label="Pause or Resume Simulation">
                           <span>⏸ Pause</span>
                         </button>
@@ -509,7 +512,7 @@ export default function WorkPage() {
                   </div>
 
                   <div className="sim-arena-body">
-                    <div className="sim-canvas-card" id="simCanvasContainer" tabIndex={0} aria-label="Selective Repeat ARQ receiver buffer simulator. Buffer on left, main receiver center.">
+                    <div className="sim-canvas-card sim-canvas-card-expanded" id="simCanvasContainer" tabIndex={0} aria-label="Selective Repeat ARQ receiver buffer simulator. Buffer on left, main receiver center.">
                       <div className="canvas-inner-wrapper">
                         <canvas className="sim-interactive-canvas" id="simCanvas" width="460" height="510"></canvas>
                       </div>
@@ -523,6 +526,16 @@ export default function WorkPage() {
                         <div className="ctrl-btn-group">
                           <button type="button" className="sim-ctrl-btn ctrl-drop-btn" id="ctrlSoftDrop" aria-label="Soft Drop">▼ SOFT DROP</button>
                           <button type="button" className="sim-ctrl-btn ctrl-hard-drop-btn" id="ctrlHardDrop" aria-label="Hard Drop">⤓ HARD DROP</button>
+                        </div>
+                      </div>
+
+                      <div className="sim-controls-guide" aria-label="Keyboard controls">
+                        <div className="guide-keys">
+                          <span><kbd className="key-chip">◀</kbd> <kbd className="key-chip">▶</kbd> <span className="guide-txt">Move</span></span>
+                          <span><kbd className="key-chip">▲</kbd> <span className="guide-txt">Rotate</span></span>
+                          <span><kbd className="key-chip">▼</kbd> <span className="guide-txt">Drop</span></span>
+                          <span><kbd className="key-chip">SPACE</kbd> <span className="guide-txt">Hard Drop</span></span>
+                          <span><kbd className="key-chip danger">R</kbd> <span className="guide-txt">Retransmit</span></span>
                         </div>
                       </div>
                     </div>

@@ -4747,6 +4747,51 @@ body {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.sim-controls-guide {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  background-color: rgba(10, 10, 14, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sim-controls-guide .guide-keys {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: rgba(245, 245, 245, 0.7);
+}
+
+.sim-controls-guide .key-chip {
+  padding: 0.12rem 0.32rem;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #d4af35;
+  font-weight: 700;
+  font-size: 0.6rem;
+}
+
+.sim-controls-guide .key-chip.danger {
+  background: rgba(200, 30, 30, 0.25);
+  border-color: rgba(200, 30, 30, 0.4);
+  color: #ff8080;
+}
+
+.sim-controls-guide .guide-txt {
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.56rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 0.2rem;
+}
+
 @media (min-width: 861px) {
   .sim-stage-layout-expanded .sim-side-recovery-panel {
     position: absolute;
